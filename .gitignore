@@ -1,0 +1,6 @@
+# Ignorar archivos de JSDoc
+**/jsdoc/
+# Ignorar archivos de node
+node_modules/
+package-lock.json
+package.json
