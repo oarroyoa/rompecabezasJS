@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#contenedor-juego {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 70%; /* Nuevo ajuste para el contenedor del juego */
+}
+
+#contenedor-rompecabezas {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+}
+
+#contenedor-piezas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 30%; /* Ajuste para el aside */
+}
+
+.pieza-rompecabezas, .contenedor-pieza {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.contenedor-pieza {
+  display: inline-block;
+  border: none; /* Eliminar el borde en el aside */
+}
+
+.oculto {
+  display: none;
+}
